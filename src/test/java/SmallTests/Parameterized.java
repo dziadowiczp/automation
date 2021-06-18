@@ -29,11 +29,11 @@ public class Parameterized {
         driver.navigate().to(webUrl);
     }
 
-    @AfterEach
-    public void driverQuit(){
-        driver.close();
-        driver.quit();
-    }
+//    @AfterEach
+//    public void driverQuit(){
+//        driver.close();
+//        driver.quit();
+//    }
 
     @DisplayName("Wyszukiwanie w Wikipedii")
     @ParameterizedTest(name = "hasło szukane to {0}")
